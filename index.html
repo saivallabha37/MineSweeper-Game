@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <title>Minesweeper Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #bacad1;
+    }
+
+    .description {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+      margin-left: 150px;
+      margin-right: 150px;
+      margin-bottom: 30px;
+    }
+
+    .description_about {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+      margin-left: 350px;
+      margin-right: 350px;
+      margin-bottom: 30px;
+    }
+
+    .description_marquee {
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+      margin-left: 150px;
+      margin-right: 150px;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 50px; /* Space between videos */
+      flex-wrap: wrap; /* Wrap on small screens */
+    }
+
+    .container_about {
+      display: flex;
+      justify-content: center;
+      gap: 100px; /* Space between videos */
+      flex-wrap: wrap; /* Wrap on small screens */
+    }
+
+    iframe {
+      width: auto;
+      height: 450px;
+      border-radius: 10px; /* Adjust the value for desired roundness */
+      border: 2px solid black; /* Add a border if needed */
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align: center;">Minesweeper💣💥</h1>
+
+  <div class="description">
+    <h2>About the Game</h2>
+    <p>
+      <strong>Minesweeper</strong>  is a classic single-player puzzle game that challenges your logic and reasoning skills. The game takes place on a grid filled with hidden mines. Your goal is to clear all the safe tiles without detonating any mines.
+    </p>
+    <p>
+        Each time you click a tile, you'll either uncover a mine (and lose), or reveal a number that tells you how many mines are touching that tile. Using these clues, you must carefully mark the locations of all the mines and uncover the rest of the grid to win.
+    </p>
+    <p>
+        Simple to learn but tricky to master, Minesweeper is a timeless game of deduction and strategy.
+    </p>
+  </div>
+
+  <div class="description">
+    <h2>Game features</h2>
+    <ul>
+    <li>Written entirely in C language</li>
+    <li>Text-based console interface</li>
+    <li>Randomized mine placement</li>
+    <li>Numbered tiles show how many mines are adjacent</li>
+    <li>Auto-reveal of safe areas when zero is uncovered</li>
+    <li>Game-over message when stepping on a mine</li>
+    <li>Victory condition when all non-mine tiles are cleared</li>
+    <li>Clean code structure for easy understanding and modification</li>
+    </ul>
+  </div>
+
+  <div class="description">
+    <h2>How to play</h2>
+    <p>
+      <u>Objective</u><br>
+      Uncover all the tiles on the grid that do not contain mines.<br><br>
+      <u>Rules</u><br>
+      <ol>
+      <li>Grid Layout:</li>
+        <ul>
+            <li>The game is played on a grid of hidden tiles(-) having numbers for rows and columns as coordinates.</li>
+            <li>Some tiles contain hidden mines, and others do not.</li>
+        </ul>
+      <li>Revealing Squares:</li>
+        <ul>
+            <li>Click on a tile to reveal what's underneath.</li>
+            <li>If you reveal a mine, you lose the game.</li>
+            <li>If the tile has a number, it tells you how many mines are adjacent to it (including diagonally).</li>
+            <li>If the tile is empty (0 adjacent mines), nearby tiles will automatically be revealed.</li>
+        </ul>
+      <li>Using Numbers:</li>
+        <ul>
+            <li>Use the numbers to deduce where the mines are located.</li>
+            <li> For example, a "2" means there are two mines in the surrounding eight tiles.</li>
+        </ul>
+      
+      <li>Winning the Game:</li>
+        Successfully reveal all non-mine tiles to win.
+      </ol>
+      <u>Tips</u>
+      <ul>
+      <li>Start from the corners or edges to open up more of the grid.</li>
+      <li>Use logic and patterns to identify where mines are likely hidden.</li>
+      <li>Be careful—one wrong coordinate can end the game!</li>
+      </ul>
+    </p>
+  </div>
+
+  <div class="description">
+    <h2>Short videos of game play</h2>
+    <div class="container">
+
+    <iframe src="\gameplay_rec\gameplay_5.mp4" title="For 5*5 Grid"></iframe>
+    <iframe src="\gameplay_rec\gameplay_8.mp4" title="For 8*8 Grid"></iframe>
+    <iframe src="\gameplay_rec\gameplay_13.mp4" title="For 13*13 Grid"></iframe>
+
+    </div>
+  </div>
+
+  <div class="description">
+    <h2>..........</h2>
+    <p>
+      Click on the link below to play the game in your browser:
+    </p>
+    <a href="https://d2602811-f7e2-4cab-b861-bf6d33a00cd4-00-366hgzra0jn33.riker.replit.dev/" download style="font-size: 18px; color: #0066cc; text-decoration: underline;">
+      Play Minesweeper Online
+    </a>
+  </div>
+
+  <div class="description">
+    <h2>Download Game Code</h2>
+    <p>
+      You can download the source code of Minesweeper written in C from the link below and can run it in your editors:
+
+    </p>
+    <a href="\minesweeper.c" download style="font-size: 18px; color: #0066cc; text-decoration: underline;">
+      Download Minesweeper (C Source File)
+    </a>
+  </div>
+
+  <div class="description">
+    <h2>Download Project Report File</h2>
+    <p>
+      You can download the source code of Minesweeper written in C from the link below:
+    </p>
+    <a href="\Minesweeper-project-report.docx" download style="font-size: 18px; color: #0066cc; text-decoration: underline;">
+      Download Report File 
+    </a>
+  </div>
+
+  <div class="description">
+    <h2>How it works</h2>
+    <p>Here is the flowchart representing the flow of game.</p>
+    <img src="\minsweeper-flowchart.jpg" alt="Flow chart of game" style="width:1100px;height:auto;justify-content: center;border-radius: 10px;border: none;box-shadow: 0 2px 5px rgba(22, 21, 21, 0.5);" >
+  </div>
+
+  <div class="description_about">
+    <h2 style="text-align: center;text-decoration: underline;">About the Developers</h2>
+    <div class="container_about">
+      <div style="text-align: center;">
+        <h3>Sai Vallabha Linga</h3>
+        1602-24-737-149<br>
+        Information Technology<br>
+        Vasavi College of Engineering<br>
+      </div>
+
+      <div style="text-align: center;">
+        <h3>Lokesh Mantoliya</h3>
+        1602-24-737-150<br>
+        Information Technology<br>
+        Vasavi College of Engineering<br>
+      </div>
+
+    </div>
+    
+  </div>
+
+  <div class="description_marquee">
+    <marquee> Thankyou for visiting our webpage. Hope you like it... </marquee>
+  </div>
+
+</body>
+</html>
